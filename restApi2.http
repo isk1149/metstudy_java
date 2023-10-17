@@ -1,0 +1,38 @@
+
+###
+GET localhost:8080/todo
+
+###
+POST localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "userName" : "InseongKim44",
+  "email" : "inseong.kim44@metlife.com",
+  "password" : "Mlkr040404!!@@"
+}
+
+###
+POST localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "userName" : "InseongKim44",
+  "email" : "inseong.kim44@metlife.com",
+  "password" : "Mlkr040404!!@@"
+}
+
+###
+POST localhost:8080/todo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0MDI4NWVmNDhhZmRlNDczMDE4YWZkZTRjMmY5MDAwMCIsImlzcyI6ImRlbW8gYXBwIiwiaWF0IjoxNjk2NDc2NzYyLCJleHAiOjE2OTY1NjMxNjJ9.BzIUhbG_KjTbY3SpvQ80KJNq8cZQ07wwH-3AM9_xC2fW8ZkAVB51WZxrfUirbgRR0EACRTBuxtrx876C9Xik5A
+
+{
+  "title":"새로 입력한 값4444",
+  "done":true
+}
+
+###
+GET http://localhost:8080/todo
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0MDI4NWVmNDhhZmRlNDczMDE4YWZkZTRjMmY5MDAwMCIsImlzcyI6ImRlbW8gYXBwIiwiaWF0IjoxNjk2NDc2NzYyLCJleHAiOjE2OTY1NjMxNjJ9.BzIUhbG_KjTbY3SpvQ80KJNq8cZQ07wwH-3AM9_xC2fW8ZkAVB51WZxrfUirbgRR0EACRTBuxtrx876C9Xik5A

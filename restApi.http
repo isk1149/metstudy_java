@@ -1,0 +1,186 @@
+###
+GET http://localhost:8080/test
+
+###
+GET http://localhost:8080/test/testGetMapping
+
+###
+GET http://localhost:8080/test/123
+
+###
+GET http://localhost:8080/test/testRequestParam?id=345345
+
+###
+GET http://localhost:8080/test/testRequestBody
+Content-Type: application/json
+
+{
+"id" : 123,
+"message" : "hello?"
+}
+
+###
+GET http://localhost:8080/test/testResponseBody
+
+###
+GET http://localhost:8080/test/testResponseEntity
+
+###
+GET http://localhost:8080/test/testResponseEntity2
+
+###
+GET http://localhost:8080/todo/test
+
+###
+POST http://localhost:8080/todo
+Content-Type: application/json
+
+{
+"title":"새포스트4"
+}
+
+###
+GET http://localhost:8080/todo
+
+###
+PUT http://localhost:8080/todo
+Content-Type: application/json
+
+{
+  "id": "40282081898d2f1901898d2f3b5c0000",
+  "title":"새포스트2 - new",
+  "done": true
+}
+
+###
+GET http://localhost:8080/todo
+
+###
+DELETE http://localhost:8080/todo
+Content-Type: application/json
+
+{
+  "id": "40282081898d2e2001898d2e2bf00000"
+}
+
+###
+GET http://localhost:8080/todo
+
+
+
+
+
+
+
+
+###
+POST localhost:8080/todo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0MDI4NWVmNDhhZmRlNDczMDE4YWZkZTRjMmY5MDAwMCIsImlzcyI6ImRlbW8gYXBwIiwiaWF0IjoxNjk2NDc2NzYyLCJleHAiOjE2OTY1NjMxNjJ9.BzIUhbG_KjTbY3SpvQ80KJNq8cZQ07wwH-3AM9_xC2fW8ZkAVB51WZxrfUirbgRR0EACRTBuxtrx876C9Xik5A
+
+{
+"title":"새로 입력한 값3",
+"done":true
+}
+
+###
+GET localhost:8080/todo/402831f489af532b0189af537b610002
+
+###
+GET localhost:8080/todo
+
+###
+PUT localhost:8080/todo
+Content-Type: application/json
+
+{
+  "id":"402831f489b980430189b980afbe0000",
+  "title": "update",
+  "done": true
+}
+
+###
+DELETE localhost:8080/todo/402846f48a6dbcfb018a6de1f9550007
+
+###
+POST localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "userName" : "InseongKim",
+  "email" : "inseong.kim@metlife.com",
+  "password" : "Mlkr878787"
+}
+
+###
+POST localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+  "userName" : "InseongKim",
+  "email" : "inseong.kim@metlife.com",
+  "password" : "Mlkr878787"
+}
+
+###
+POST https://core-api.stable.wellaged.health/medical-checkup-health-scores
+Content-Type: application/json
+X-Application-Token: d505737791ad96d5115cafd30fb04f38eeb38c9d
+Cache-Control: no-store
+
+{
+  "checkupDate": "2023-08-01",
+  "height": 174.0,
+  "weight": 64.0,
+  "waist": 95.7,
+  "bmi": 22.3,
+  "systolicBloodPressure": 120,
+  "diastolicBloodPressure": 80,
+  "totalCholesterol": 202.5,
+  "hdlCholesterol": 70.1,
+  "ldlCholesterol": 120.4,
+  "triglycerides": 150.3,
+  "hemoglobin": 16.4,
+  "fastingBloodSugar": 85.6,
+  "urinaryProtein": false,
+  "serumCreatinine": 1.26,
+  "gfr": 65.6,
+  "ast": 25.1,
+  "alt": 40.5,
+  "yGpt": 21.4
+}
+
+###
+POST https://api.wellaged.ai/medical-checkup-health-scores
+Content-Type: application/json
+X-Application-Token: f789c208b4dc25a6cd62748fa824db2550a16955
+Cache-Control: no-store
+
+{
+  "checkupDate": "2023-08-01",
+  "height": 174.0,
+  "weight": 64.0,
+  "waist": 95.7,
+  "bmi": 22.3,
+  "systolicBloodPressure": 120,
+  "diastolicBloodPressure": 80,
+  "totalCholesterol": 202.5,
+  "hdlCholesterol": 70.1,
+  "ldlCholesterol": 120.4,
+  "triglycerides": 150.3,
+  "hemoglobin": 16.4,
+  "fastingBloodSugar": 85.6,
+  "urinaryProtein": false,
+  "serumCreatinine": 1.26,
+  "gfr": 65.6,
+  "ast": 25.1,
+  "alt": 40.5,
+  "yGpt": 21.4
+}
+
+###
+GET http://localhost:8080/todo
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0MDI4NWVmNDhhZmRkZGZhMDE4YWZkZGU5ODZkMDAwMCIsImlzcyI6ImRlbW8gYXBwIiwiaWF0IjoxNjk2NDc2MzQwLCJleHAiOjE2OTY1NjI3NDB9.pmgeqfDj1eCB0lfFAp-mqUwmhie3Jl_vZ_QmEYr5-0dfXadeNg0tekKfyhVYjmQusjBlypULbyzgd_t7evfiUg
+
+

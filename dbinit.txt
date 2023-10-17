@@ -1,0 +1,8 @@
+기존에 설정해놓은 todo db설정에서 database : todo 부분을 삭제하고 test연결
+query console창 열고
+create database todo;
+show databases;
+
+todo db설정에서 database : todo 로 설정하고 test연결
+query console창 다시 열기
+테이블이 생성되면 todo쪽 리프레시 해줘야 반영될 수 있음
